@@ -17,9 +17,6 @@ type_body_length:
   - 300 # warning
   - 400 # error
 # or they can set both explicitly
-file_length:
-  warning: 500
-  error: 1200
 # naming rules can set warnings/errors for min_length and max_length
 # additionally they can set excluded names
 type_name:
@@ -37,4 +34,7 @@ variable_name:
     - id
     - URL
     - GlobalAPIKey
+disabled_rules:
+    - function_body_length
+    - file_length
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)
